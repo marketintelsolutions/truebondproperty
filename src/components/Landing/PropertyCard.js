@@ -5,9 +5,9 @@ import { RiMenu3Fill } from 'react-icons/ri'
 
 const PropertyCard = () => {
     return (
-        <div className='shadow-[0_4px_20px_2px_rgba(43,43,43,0.05)]'>
+        <div className='shadow-[0_4px_20px_2px_rgba(43,43,43,0.05)] w-full mx-auto max-w-[348px]'>
             <div className='relative'>
-                <img src='/images/house.webp' className='w-full max-w-[348px] h-[208px] object-cover ' />
+                <img src='/images/house.webp' className='w-full h-[208px] object-cover ' />
                 <span className='inline-flex px-8 py-1 bg-primaryRed tracking-[3px] absolute bottom-0 left-0 text-white'>BUY</span>
             </div>
             <div className='bg-white px-10 py-10 flex flex-col gap-3'>

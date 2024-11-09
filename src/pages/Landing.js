@@ -14,7 +14,7 @@ const Landing = () => {
             <ForSale />
             <ForRent />
             <ClientStories />
-            <Contact />
+
         </main>
     )
 }
