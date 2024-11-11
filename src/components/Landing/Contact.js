@@ -3,7 +3,7 @@ import React from 'react'
 const Contact = () => {
     return (
         <div className='bg-[#1d2d42] text-white py-20'>
-            <div className='w-full mx-auto max-w-[1100px] flex justify-between'>
+            <div className='w-full mx-auto max-w-[1100px] flex flex-wrap gap-20 md:px-0 px-10 justify-between'>
                 <div>
                     <h2 className='text-lg font-thin tracking-[4px]'>
                         FIND YOUR <br /> NEXT HOME</h2>
@@ -28,7 +28,7 @@ const Contact = () => {
                         </div>
                         <div>
                             <label htmlFor="interest">Interested in</label>
-                            <div className='flex w-full gap-24 mt-10'>
+                            <div className='flex flex-wrap w-full gap-8 md:gap-14 lg:gap-24 mt-10'>
                                 <div className='flex items-center gap-4'>
                                     <input type="radio" name="interest" id="interest" />
                                     <span htmlFor="interest" className='text-base font-extralight tracking-[2px]'>Buy</span>

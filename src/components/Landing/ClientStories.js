@@ -5,18 +5,18 @@ import { MdOutlineMail } from 'react-icons/md'
 
 const ClientStories = () => {
     return (
-        <div className='flex flex-col justify-center items-center mt-10 relative'>
+        <div className='flex flex-col justify-center items-center mt-20 md:mt-10 relative'>
             <h2 className='text-lg font-thin tracking-[4px]'>CLIENTS STORIES</h2>
-            <div className='relative z-10 flex flex-col gap-4 bg-primaryBlue justify-center items-center w-full max-w-max mx-auto py-20 mt-5 translate-y-[90px]'>
-                <p className='text-white max-w-[40%] text-center text-base font-extralight tracking-[1px] leading-[35px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas similique quibusdam enim excepturi mollitia quaerat eum, ipsa vel quae alias a repellendus sapiente culpa beatae natus, quia voluptate. Nulla, amet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus doloribus facere voluptate, </p>
+            <div className='relative z-10 flex flex-col gap-4 bg-primaryBlue justify-center items-center w-full max-w-max mx-auto py-20 md:mt-5 translate-y-[90px]'>
+                <p className='text-white max-w-[90%] md:max-w-[40%] text-center text-base font-extralight tracking-[1px] leading-[35px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas similique quibusdam enim excepturi mollitia quaerat eum, ipsa vel quae alias a repellendus sapiente culpa beatae natus, quia voluptate. Nulla, amet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus doloribus facere voluptate, </p>
                 <h3 className='text-[19px] text-primaryRed'>Jay Flake, NG</h3>
             </div>
             <div className='h-lvh w-full sticky top-0 left-0' style={{ backgroundImage: `url(/images/house.webp)`, backgroundSize: 'cover' }}>
 
             </div>
             <div className='py-20  relative z-10 bg-[#e4ecf2] w-full flex justify-center items-center flex-col'>
-                <h2 className='text-lg font-thin tracking-[4px]'>YOUR DREAM HOUSE IS ONE STEP AWAY!</h2>
-                <div className='flex justify-center items-center gap-40 mt-20'>
+                <h2 className='text-base md:text-lg font-thin tracking-[4px] text-center'>YOUR DREAM HOUSE IS ONE STEP AWAY!</h2>
+                <div className='flex justify-center flex-wrap items-center gap-16 md:gap-20 lg:gap-40 mt-20'>
                     <div className='flex flex-col gap-8 text-center'>
                         <div className='flex flex-col gap-4 items-center'>
                             <span className='text-primaryRed'><IoCallOutline size={60} /></span>

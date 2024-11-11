@@ -5,7 +5,7 @@ import { MdHomeWork } from 'react-icons/md'
 const Footer = () => {
     return (
         <footer className='bg-primaryBlue py-20 text-white'>
-            <div className='w-full max-w-max mx-auto flex justify-between'>
+            <div className='w-full max-w-max mx-auto flex flex-wrap gap-10 px-6 md:px-0 justify-between'>
                 <div className='h-[200px] flex flex-col justify-between'>
                     <div className='flex items-center gap-3 '>
                         <span><MdHomeWork size={30} /></span>
@@ -16,7 +16,7 @@ const Footer = () => {
                         © 2024 Truebond
                     </p>
                 </div>
-                <div className='flex gap-40 w-[40%]'>
+                <div className='flex flex-wrap gap-10 md:gap-24 lg:gap-40 w-[40%]'>
                     <div className='flex flex-col gap-5'>
                         <p className='text-base  font-roboto'>Home</p>
                         <p className='text-base  font-roboto'>About Us</p>

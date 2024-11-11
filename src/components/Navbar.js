@@ -1,40 +1,90 @@
 import React, { useState } from 'react'
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
+import { IoMenu } from 'react-icons/io5';
 import { MdHomeWork } from 'react-icons/md'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 // import { } from 'react-router'
+
+const navigationLinks = [
+    { path: '/', label: 'Home' },
+    { path: '/about-us', label: 'About Us' },
+    {
+        label: 'Properties',
+        isDropdown: true,
+        dropdownItems: [
+            { path: '/all-properties', label: 'All' },
+            { path: '/buy', label: 'Buy' },
+            { path: '/rent', label: 'Rent' }
+        ]
+    },
+    { path: '/blog', label: 'Blog' },
+    { path: '/contact', label: 'Contact' }
+];
 
 const Navbar = () => {
     const [isDropdown, setIsDropdown] = useState(false)
+    const [isMenu, setIsMenu] = useState(false)
+
+    const { pathname } = useLocation()
+
+    console.log('path', pathname);
     return (
-        <nav className='flex  gap-8 justify-between  items-center bg-primaryBlue text-white'>
-            <div className='flex items-center gap-8'>
+        <nav className='flex relative gap-8 justify-between  items-center bg-primaryBlue text-white'>
+            <div className='flex items-center gap-8 md:w-auto w-full justify-between'>
                 <div className='flex px-4 items-center gap-3 h-full pt-6 pb-2 border-b-4 border-primaryRed'>
                     <span><MdHomeWork size={30} /></span>
                     <h1 className='text-[19px]'>Truebond</h1>
                     <p className='text-[14px] font-light tracking-[2px]'>PROPERTIES</p>
                 </div>
-                <div className='flex items-center gap-4 h-full pt-6 pb-2  border-b-4 border-transparent '>
+                <div className='mb:flex zr:hidden  items-center gap-4 h-full pt-6 pb-2  border-b-4 border-transparent '>
                     <span><FaFacebookF size={16} /></span>
                     <span><FaTwitter size={16} /></span>
                     <span><FaInstagram size={16} /></span>
                     <span><FaLinkedinIn size={16} /></span>
                 </div>
             </div>
-            <div className='flex items-center gap-5 pr-10'>
-                <Link to={'/'} className='px-2'>Home</Link>
-                <Link to={'/about-us'} className='px-2'>About Us</Link>
-                <div className='relative px-4' onClick={() => setIsDropdown(!isDropdown)} onMouseEnter={() => setIsDropdown(true)} >
-                    Properties
-                    {isDropdown && <div onMouseLeave={() => setIsDropdown(false)} className='flex flex-col gap-2 absolute top-[150%] py-2 left-0 bg-primaryBlue w-full px-4'>
-                        <Link to={'/all-properties'} className='hover:text-primaryRed'>All</Link>
-                        <Link to={'/buy'} className='hover:text-primaryRed'>Buy</Link>
-                        <Link to={'/rent'} className='hover:text-primaryRed' >Rent</Link>
-                    </div>}
-                </div>
-                <Link to={'/blog'} className='px-2'>Blog</Link>
-                <Link to={'/contact'} className='px-2'>Contact</Link>
+            <div className={`md:relative absolute top-[100%] left-0 md:flex-row flex-col md:w-auto w-full bg-primaryBlue md:py-0 py-10  items-center gap-5 pr-10 ${isMenu ? 'flex' : 'md:flex zr:hidden'}`}>
+                {navigationLinks.map((item, index) => {
+                    if (item.isDropdown) {
+                        return (
+                            <div
+                                key={index}
+                                className='relative px-4'
+                                onClick={() => setIsDropdown(!isDropdown)}
+                                onMouseEnter={() => setIsDropdown(true)}
+                            >
+                                {item.label}
+                                {isDropdown && (
+                                    <div
+                                        onMouseLeave={() => setIsDropdown(false)}
+                                        className='flex flex-col gap-2 absolute top-[150%] py-2 left-0 bg-primaryBlue w-full px-4'
+                                    >
+                                        {item.dropdownItems.map((dropdownItem, dropIndex) => (
+                                            <Link
+                                                key={dropIndex}
+                                                to={dropdownItem.path}
+                                                className={`hover:text-primaryRed ${pathname === dropdownItem.path ? 'text-primaryRed' : 'text-white'}`}
+                                            >
+                                                {dropdownItem.label}
+                                            </Link>
+                                        ))}
+                                    </div>
+                                )}
+                            </div>
+                        );
+                    }
+                    return (
+                        <Link
+                            key={index}
+                            to={item.path}
+                            className={`px-2 ${pathname === item.path ? 'text-primaryRed' : 'text-white'}`}
+                        >
+                            {item.label}
+                        </Link>
+                    );
+                })}
             </div>
+            <span className={`pl-2 pr-6 pt-6 pb-2 cursor-pointer zr:inline-flex md:hidden`} onClick={() => setIsMenu(!isMenu)}><IoMenu size={30} /></span>
         </nav>
     )
 }

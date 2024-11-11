@@ -7,6 +7,8 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Rent from "./pages/Rent";
+import Contact from "./pages/Contact";
+import About from "./pages/About";
 
 function App() {
 
@@ -16,6 +18,14 @@ function App() {
       element: (
         <MainLayout>
           <Landing />
+        </MainLayout>
+      ),
+    },
+    {
+      path: "/about-us",
+      element: (
+        <MainLayout>
+          <About />
         </MainLayout>
       ),
     },
@@ -35,6 +45,12 @@ function App() {
       path: "/rent",
       element: <MainLayout>
         <Rent />
+      </MainLayout>,
+    },
+    {
+      path: "/contact",
+      element: <MainLayout>
+        <Contact />
       </MainLayout>,
     },
   ]);
