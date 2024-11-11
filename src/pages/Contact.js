@@ -9,7 +9,7 @@ const Contact = () => {
                     <h1 className='text-[40px] font-bold'>Contact</h1>
                 </div>
             </div>
-            <div className='flex justify-between w-full max-w-[1000px] mx-auto py-40 text-[#2b2b2b]'>
+            <div className='flex flex-wrap lg:px-0 px-6 gap-10 justify-between w-full max-w-[1000px] mx-auto py-40 text-[#2b2b2b]'>
                 <h1 className='text-[26px] font-bold'>Our Office</h1>
                 <p className='text-base font-roboto'>500 Terry Francine Street
                     <br />

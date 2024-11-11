@@ -10,7 +10,7 @@ const Rent = () => {
                     <h1 className='text-[40px] font-bold'>Rent</h1>
                 </div>
             </div>
-            <div className='grid grid-cols-3 gap-y-20 w-full max-w-max mx-auto mt-20'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-20 w-full max-w-max mx-auto mt-20'>
                 {
 
                     Array.from({ length: 9 }, (_, index) => <PropertyCard key={index} />)

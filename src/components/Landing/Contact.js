@@ -3,7 +3,7 @@ import React from 'react'
 const Contact = () => {
     return (
         <div className='bg-[#1d2d42] text-white py-20'>
-            <div className='w-full mx-auto max-w-[1100px] flex flex-wrap gap-20 md:px-0 px-10 justify-between'>
+            <div className='w-full mx-auto max-w-[1100px] flex flex-wrap gap-20 lg:px-0 px-10 justify-between'>
                 <div>
                     <h2 className='text-lg font-thin tracking-[4px]'>
                         FIND YOUR <br /> NEXT HOME</h2>
