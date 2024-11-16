@@ -1,5 +1,6 @@
 import React from 'react'
 import PropertyCard from './PropertyCard'
+import { Link } from 'react-router-dom'
 
 const ForRent = () => {
     return (
@@ -13,7 +14,7 @@ const ForRent = () => {
                     Array.from({ length: 3 }, (_, index) => <PropertyCard key={index} />)
                 }
             </div>
-            <button className='bg-primaryRed px-5 py-3 w-[170px] text-[19px] mt-24 text-white'>View More</button>
+            <Link to={'/rent'} className='bg-primaryRed text-center px-5 py-3 w-[170px] text-[19px] mt-24 text-white'>View More</Link>
 
         </div>
     )

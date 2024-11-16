@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Banner = () => {
     return (
@@ -8,7 +9,7 @@ const Banner = () => {
                     <h1 className='text-[40px] mb:text-[54px] md:text-[72px] text-center  font-extrabold'>New Properties</h1>
                     <p className=' text-[11px] mb:text-[15px] md:text-[18px] font-[200] tracking-[5px] uppercase'>Exclusively by Truebond</p>
                 </div>
-                <button className='bg-primaryRed px-5 py-3 w-[170px] text-[19px]'>Explore</button>
+                <Link to={'/all-properties'} className='bg-primaryRed text-center px-5 py-3 w-[170px] text-[19px]'>Explore</Link>
             </div>
         </section>
     )
