@@ -150,7 +150,7 @@ const Contact = () => {
                           <span class="label">Email:</span> <span class="value">${email}</span>
                       </div>
                       <div class="data-row">
-                          <span class="label">Phone:</span> <span class="value">${interest}</span>
+                          <span class="label">Interest:</span> <span class="value">${interest}</span>
                       </div>
                       <div class="data-row">
                           <span class="label">Message:</span>

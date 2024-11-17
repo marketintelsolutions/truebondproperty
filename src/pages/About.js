@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import TeamMember from '../components/About/TeamMember'
 
 const About = () => {
+    useEffect(() => {
+        window.scroll(0, 0)
+    }, [])
     return (
         <section>
             <div className='' style={{ backgroundImage: `url(/images/bicycle.webp)`, backgroundSize: 'cover' }}>

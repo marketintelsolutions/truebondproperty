@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import PropertyCard from '../components/Landing/PropertyCard'
 
 const Buy = () => {
+    useEffect(() => {
+        window.scroll(0, 0)
+    }, [])
     return (
         <section className='pb-20'>
             <div className='' style={{ backgroundImage: `url(/images/bicycle.webp)`, backgroundSize: 'cover' }}>

@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 const Contact = () => {
+    useEffect(() => {
+        window.scroll(0, 0)
+    }, [])
     return (
         <section>
             <div className='' style={{ backgroundImage: `url(/images/bicycle.webp)`, backgroundSize: 'cover' }}>
