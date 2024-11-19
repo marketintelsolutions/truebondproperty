@@ -8,6 +8,7 @@ const Contact = () => {
         firstName: '',
         lastName: '',
         email: '',
+        phone: '',
         interest: '',
         message: ''
     });
@@ -16,6 +17,7 @@ const Contact = () => {
         firstName: '',
         lastName: '',
         email: '',
+        phone: '',
         interest: ''
     });
 
@@ -33,6 +35,10 @@ const Contact = () => {
 
         if (!formData.lastName.trim()) {
             tempErrors.lastName = 'Last name is required';
+            isValid = false;
+        }
+        if (!formData.phone.trim()) {
+            tempErrors.phone = 'Phone number is required';
             isValid = false;
         }
 
@@ -82,6 +88,7 @@ const Contact = () => {
         const { firstName,
             lastName,
             email,
+            phone,
             interest,
             message } = formData
 
@@ -150,6 +157,9 @@ const Contact = () => {
                           <span class="label">Email:</span> <span class="value">${email}</span>
                       </div>
                       <div class="data-row">
+                          <span class="label">Phone:</span> <span class="value">${phone}</span>
+                      </div>
+                      <div class="data-row">
                           <span class="label">Interest:</span> <span class="value">${interest}</span>
                       </div>
                       <div class="data-row">
@@ -186,6 +196,7 @@ const Contact = () => {
                 firstName: '',
                 lastName: '',
                 email: '',
+                phone: '',
                 interest: '',
                 message: ''
             });
@@ -253,6 +264,19 @@ const Contact = () => {
                             />
                             {errors.email && (
                                 <span className='text-red-500 text-sm'>{errors.email}</span>
+                            )}
+                        </div>
+                        <div className='flex flex-col gap-3 w-full border-b'>
+                            <label htmlFor="phone">Phone *</label>
+                            <input
+                                name='phone'
+                                type="number"
+                                value={formData.phone}
+                                onChange={handleChange}
+                                className='bg-transparent focus:outline-none'
+                            />
+                            {errors.phone && (
+                                <span className='text-red-500 text-sm'>{errors.phone}</span>
                             )}
                         </div>
                         <div>

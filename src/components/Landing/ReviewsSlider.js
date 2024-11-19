@@ -28,7 +28,7 @@ const ReviewsSlider = () => {
         }, 5000);
 
         return () => clearInterval(timer);
-    }, [currentIndex]);
+    }, []);
 
     const handleNext = () => {
         if (!isAnimating) {
