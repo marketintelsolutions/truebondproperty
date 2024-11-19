@@ -9,6 +9,8 @@ import {
 import Rent from "./pages/Rent";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
+import Blog from "./pages/Blog";
+import BlogItem from "./pages/BlogItem";
 
 function App() {
 
@@ -46,6 +48,16 @@ function App() {
       element: <MainLayout>
         <Rent />
       </MainLayout>,
+    },
+    {
+      path: "/blog",
+      element: <MainLayout>
+        <Blog />
+      </MainLayout>,
+    },
+    {
+      path: "blog/:id",
+      element: <MainLayout><BlogItem /></MainLayout>,
     },
     {
       path: "/contact",
