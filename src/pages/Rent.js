@@ -9,8 +9,8 @@ const Rent = () => {
         <section className='pb-20'>
             <div className='' style={{ backgroundImage: `url(/images/house3.jpg)`, backgroundSize: 'cover', backgroundPosition: '10% 40%' }}>
                 <div className='h-full w-full flex flex-col justify-center items-center gap-5 py-20 bg-[#00000051] text-white'>
-                    <p className='text-lg tracking-[5px] font-thin'>OUR EXCLUSIVE PROPERTIES</p>
-                    <h1 className='text-[40px] font-bold'>Rent</h1>
+                    <p className='text-2xl tracking-[5px] font-thin'>OUR EXCLUSIVE PROPERTIES</p>
+                    <h1 className='text-[60px] font-bold'>Rent</h1>
                 </div>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-20 w-full max-w-max mx-auto mt-20'>

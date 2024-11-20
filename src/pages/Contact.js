@@ -8,8 +8,8 @@ const Contact = () => {
         <section>
             <div className='' style={{ backgroundImage: `url(/images/contact.jpg)`, backgroundSize: 'cover', backgroundPosition: '10% 40%' }}>
                 <div className='h-full w-full flex flex-col justify-center items-center gap-5 py-20 bg-[#00000051] text-white'>
-                    <p className='text-lg tracking-[5px] font-thin'>BE IN TOUCH</p>
-                    <h1 className='text-[40px] font-bold'>Contact</h1>
+                    <p className='text-2xl tracking-[5px] font-thin'>BE IN TOUCH</p>
+                    <h1 className='text-[60px] font-bold'>Contact</h1>
                 </div>
             </div>
             <div className='flex flex-wrap lg:px-0 px-6 gap-10 justify-between w-full max-w-[1000px] mx-auto py-40 text-[#2b2b2b]'>
