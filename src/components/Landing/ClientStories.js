@@ -6,11 +6,11 @@ import ReviewsSlider from './ReviewsSlider'
 
 const ClientStories = () => {
     return (
-        <div className='flex flex-col justify-center items-center mt-20 md:mt-10 relative'>
-            <h2 className='text-lg font-thin tracking-[4px]'>CLIENTS STORIES</h2>
+        <div className='flex flex-col justify-center items-center mt-10 md:mt-20 relative'>
+            <h2 className='text-2xl  font-thin tracking-[4px]'>CLIENTS STORIES</h2>
 
             <ReviewsSlider />
-            <div className='h-lvh w-full sticky top-0 left-0' style={{ backgroundImage: `url(/images/house.webp)`, backgroundSize: 'cover' }}>
+            <div className='h-lvh w-full sticky top-0 left-0' style={{ backgroundImage: `url(/images/house2.jpg)`, backgroundSize: 'cover' }}>
 
             </div>
             <div className='py-20  relative z-10 bg-[#e4ecf2] w-full flex justify-center items-center flex-col'>

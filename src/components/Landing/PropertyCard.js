@@ -42,9 +42,9 @@ const PropertyCard = ({ property }) => {
                     </span>
                 </div>
                 <div className='bg-white px-10 py-10 flex flex-col gap-3'>
-                    <h2 className='text-[24px]'>{propertyData.address}</h2>
-                    <p className='text-[14px] font-thin'>{propertyData.location}</p>
-                    <p className='text-[18px] font-light'>{propertyData.price}</p>
+                    <h2 className='text-[28px]'>{propertyData.address}</h2>
+                    <p className='text-[18px] font-thin'>{propertyData.location}</p>
+                    <p className='text-[20px] font-light'>{propertyData.price}</p>
                     <div className='mt-10 pt-8 border-t border-[rgba(43,43,43,0.1)] flex w-full justify-between'>
                         <div className='flex flex-col gap-2'>
                             <span><LuBedDouble color='#000001' size={22} /></span>

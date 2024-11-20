@@ -12,7 +12,9 @@ module.exports = {
       },
       fontFamily: {
         roboto: "Roboto",
-        oswald: "Oswald"
+        oswald: "Oswald",
+        inter: "Inter",
+        poppins: "Poppins"
       },
       screens: {
         zr: "0px",

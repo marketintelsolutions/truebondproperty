@@ -12,12 +12,12 @@ const MainLayout = ({ children }) => {
             {children}
             <Contact />
             <Footer />
-            <WhatsAppWidget
+            {/* <WhatsAppWidget
                 // CompanyIcon='/logo.svg'
                 companyName="Truebond Property"
                 message="Hello, how can we help you today?"
                 phoneNumber="+2348030030000"
-            />
+            /> */}
         </>
     )
 }

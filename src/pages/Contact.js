@@ -6,7 +6,7 @@ const Contact = () => {
     }, [])
     return (
         <section>
-            <div className='' style={{ backgroundImage: `url(/images/bicycle.webp)`, backgroundSize: 'cover' }}>
+            <div className='' style={{ backgroundImage: `url(/images/contact.jpg)`, backgroundSize: 'cover', backgroundPosition: '10% 40%' }}>
                 <div className='h-full w-full flex flex-col justify-center items-center gap-5 py-20 bg-[#00000051] text-white'>
                     <p className='text-lg tracking-[5px] font-thin'>BE IN TOUCH</p>
                     <h1 className='text-[40px] font-bold'>Contact</h1>

@@ -7,7 +7,7 @@ const About = () => {
     }, [])
     return (
         <section>
-            <div className='' style={{ backgroundImage: `url(/images/bicycle.webp)`, backgroundSize: 'cover' }}>
+            <div className='' style={{ backgroundImage: `url(/images/about.jpg)`, backgroundSize: 'cover', backgroundPosition: '10% 50%' }}>
                 <div className='h-full w-full flex flex-col justify-center items-center gap-5 py-20 bg-[#00000051] text-white'>
                     <p className='text-lg tracking-[5px] font-thin'>LEARN ABOUT US</p>
                     <h1 className='text-[40px] font-bold'>ABOUT</h1>
