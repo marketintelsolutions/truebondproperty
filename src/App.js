@@ -11,6 +11,7 @@ import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Blog from "./pages/Blog";
 import BlogItem from "./pages/BlogItem";
+import Services from "./pages/Services";
 
 function App() {
 
@@ -47,6 +48,12 @@ function App() {
       path: "/rent",
       element: <MainLayout>
         <Rent />
+      </MainLayout>,
+    },
+    {
+      path: "/services",
+      element: <MainLayout>
+        <Services />
       </MainLayout>,
     },
     {

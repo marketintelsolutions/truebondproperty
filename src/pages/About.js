@@ -9,8 +9,8 @@ const About = () => {
         <section>
             <div className='' style={{ backgroundImage: `url(/images/about.jpg)`, backgroundSize: 'cover', backgroundPosition: '10% 50%' }}>
                 <div className='h-full w-full flex flex-col justify-center items-center gap-5 py-20 bg-[#00000051] text-white'>
-                    <p className='text-lg tracking-[5px] font-thin'>LEARN ABOUT US</p>
-                    <h1 className='text-[40px] font-bold'>ABOUT</h1>
+                    <p className='text-2xl tracking-[5px] font-thin'>LEARN ABOUT US</p>
+                    <h1 className='text-[60px] font-bold'>ABOUT</h1>
                 </div>
             </div>
             <div className='w-full max-w-max mx-auto py-20'>
@@ -21,7 +21,7 @@ const About = () => {
             <div className="border-t-2  border-gray-200 pt-10">
                 <div className=" w-full max-w-max mx-auto px-0 border-l-[1px] grid grid-cols-2 border-gray-200">
                     <div className="flex flex-col gap-8" data-aos="fade-left">
-                        <h2 className="pl-20 tracking-wide text-primaryRed">OUR MISSION</h2>
+                        <h2 className="pl-20 tracking-wide text-primaryRed font-bold text-xl">OUR MISSION</h2>
 
                         <h1 className="pl-20 border-l-2 border-primaryRed text-primaryBlue tracking-wider text-2xl max-w-[500px]">
                             Redefining property investment and leisure with quality, integrity, and innovation.
@@ -34,10 +34,20 @@ const About = () => {
                                 - Bespoke leisure solutions
                             </li>
                         </ul>
-                        <h2 className="pl-20 tracking-wide mt-10 text-primaryRed">OUR VISION</h2>
+                        <h2 className="pl-20 tracking-wide mt-10 text-primaryRed font-bold text-xl">OUR VISION</h2>
                         <h1 className="pl-20 border-l-2 border-primaryRed text-primaryBlue tracking-wider text-2xl max-w-[500px]">
                             To be a leading provider in high-value real estate and leisure solutions across key markets.
                         </h1>
+                        <h2 className="pl-20 tracking-wide mt-10 text-primaryRed font-bold text-xl">OUR CORE VALUES</h2>
+
+                        <ul className="pl-20 border-l-2 border-primaryRed flex flex-col gap-4 font-light text-black tracking-[2px]">
+                            <li>- Integrity</li>
+                            <li>- Quality</li>
+                            <li>- Innovation</li>
+                            <li>
+                                - Customer Focus
+                            </li>
+                        </ul>
 
                     </div>
                     <div className="flex justify-end pr-20" data-aos="fade-right">
