@@ -30,7 +30,7 @@ const Navbar = () => {
 
     console.log('path', pathname);
     return (
-        <nav className='flex relative gap-8 justify-between  items-center bg-primaryBlue text-white'>
+        <nav className='sticky top-0 left-0 z-[999] flex  gap-8 justify-between  items-center bg-primaryBlue text-white'>
             <div className='flex items-center gap-8 md:w-auto w-full justify-between'>
                 <Link to={'/'} className='flex px-4 items-center gap-3 h-full pt-8 pb-3 border-b-4 border-primaryRed'>
                     <span><MdHomeWork size={30} /></span>

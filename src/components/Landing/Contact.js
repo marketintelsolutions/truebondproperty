@@ -216,10 +216,7 @@ const Contact = () => {
                     <h2 className='text-lg font-thin tracking-[4px]'>
                         FIND YOUR <br /> NEXT HOME</h2>
                     <p className='max-w-[400px] text-base mt-20 leading-[35px] font-extralight tracking-[2px]'>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex incidunt dolor illum facilis,
-                        sint suscipit recusandae labore ipsa nulla. Fuga sint repellendus laudantium pariatur commodi
-                        nesciunt quaerat, ullam velit. Qui corporis praesentium cupiditate in quos? Dolores expedita
-                        reiciendis praesentium ducimus?
+                        At TrueBond Properties Limited, we specialize in the comprehensive management of residential, commercial, and industrial properties across Nigeria. With a deep commitment to excellence, customer satisfaction, and operational efficiency, we provide a range of property management solutions designed to maximize the value of your investments
                     </p>
                 </div>
                 <div className='w-1/2'>

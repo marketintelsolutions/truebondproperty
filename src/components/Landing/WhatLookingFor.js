@@ -9,7 +9,7 @@ const WhatLookingFor = () => {
             </h2>
 
             <div className='flex w-full max-w-max text-white text-[40px] mb:text-[60px] md:text-[92px] font-bold'>
-                <div className='w-full h-[250px] mb:h-[300px] md:h-[447px] hover:text-primaryRed' style={{ backgroundImage: `url(/images/house.webp)`, backgroundSize: 'cover' }}>
+                <div className='w-full h-[250px] mb:h-[300px] md:h-[447px] hover:text-primaryRed' style={{ backgroundImage: `url(/images/interior.jpg)`, backgroundSize: 'cover' }}>
                     <Link to={'/buy'} className='inline-flex justify-center items-center h-full w-full bg-[#000000c0]'>Buy</Link>
                 </div>
                 <div className='w-full h-[250px] mb:h-[300px] md:h-[447px] hover:text-primaryRed' style={{ backgroundImage: `url(/images/chair.webp)`, backgroundSize: 'cover' }}>
