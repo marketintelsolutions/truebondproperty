@@ -1,7 +1,11 @@
 import React, { useEffect } from 'react'
 import TeamMember from '../components/About/TeamMember'
+import TeamMemberModal from '../components/About/TeamMemberModal'
+import { useDisclosure } from '../hooks/useDisclosure'
 
 const About = () => {
+    const teammemberModal = useDisclosure()
+
     useEffect(() => {
         window.scroll(0, 0)
     }, [])
@@ -65,10 +69,13 @@ const About = () => {
             <div className='flex gap-20 justify-center items-center pt-20 pb-40 flex-wrap max-w-[1300px] mx-auto'>
                 {
                     Array.from({ length: 6 }, (_, index) => (
-                        <TeamMember key={index} />
+                        <TeamMember teammemberModal={teammemberModal} key={index} />
                     ))
                 }
             </div>
+
+            {teammemberModal.isOpen && <TeamMemberModal modal={teammemberModal} />}
+
         </section>
     )
 }
