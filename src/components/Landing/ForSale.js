@@ -13,11 +13,11 @@ const ForSale = () => {
             </h2>
             <h1 className='mt-5 text-[30px] md:text-[60px] font-bold'>For Sale</h1>
             <div className='mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20'>
-                {properties.map((property, index) => (
+                {properties.slice(0, 3).map((property, index) => (
                     <PropertyCard key={index} property={property} />
                 ))}
             </div>
-            <Link to={'/buy'} className='bg-primaryRed border border-primaryRed hover:bg-white hover:text-primaryRed text-center px-8 py-4 w-[190px] text-[25px] mt-24 text-white'>View More</Link>
+            <Link to={'/buy'} className='bg-primaryRed border border-primaryRed hover:bg-white hover:text-primaryRed text-center px-4 py-4 rounded-md w-[190px] text-[20px] mt-24 text-white'>View More</Link>
 
         </div>
     )

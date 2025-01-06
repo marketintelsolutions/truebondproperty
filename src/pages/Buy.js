@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react'
 import PropertyCard from '../components/Landing/PropertyCard'
+import { properties } from '../utils/data'
+
 
 const Buy = () => {
     useEffect(() => {
@@ -16,7 +18,10 @@ const Buy = () => {
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-20 w-full max-w-max mx-auto mt-20'>
                 {
 
-                    Array.from({ length: 6 }, (_, index) => <PropertyCard key={index} />)
+                    // Array.from({ length: 6 }, (_, index) => <PropertyCard key={index} />)
+                    properties.map((property, index) => (
+                        <PropertyCard key={index} property={property} />
+                    ))
                 }
             </div>
         </section>

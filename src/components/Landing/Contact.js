@@ -316,7 +316,7 @@ const Contact = () => {
                         <button
                             type='submit'
                             disabled={isSubmitting}
-                            className='bg-primaryRed border border-primaryRed hover:bg-white hover:text-primaryRed px-5 py-3 w-[170px] text-[19px] mt-4 text-white disabled:opacity-50'
+                            className='bg-primaryRed border border-primaryRed hover:bg-white hover:text-primaryRed px-4 py-3 w-[170px] text-[19px] rounded-md mt-4 text-white disabled:opacity-50'
                         >
                             {isSubmitting ? 'Submitting...' : 'Submit'}
                         </button>
