@@ -25,11 +25,11 @@ const Footer = () => {
                         <p className='text-base  font-roboto'>Contact</p>
                     </div>
                     <div className='flex flex-col justify-between h-[200px]'>
-                        <p className='text-base font-roboto'>500 Terry Francine Street
+                        <p className='text-base font-roboto'>Plot 22, Akiogun New Market Road,
                             <br />
-                            San Francisco, CA 94158
+                            Oniru Victoria Island, Lagos
                             <br />
-                            info@mysite.com</p>
+                            info@truebond.com</p>
                         <div className='flex items-center gap-4 h-full pt-6 pb-2  border-b-4 border-transparent '>
                             <span><FaFacebookF size={16} /></span>
                             <span><FaTwitter size={16} /></span>

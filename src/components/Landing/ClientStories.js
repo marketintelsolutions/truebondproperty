@@ -22,8 +22,8 @@ const ClientStories = () => {
                             <h2 className='text-[26px]'>Call Us</h2>
                         </div>
                         <div className='flex flex-col gap-4'>
-                            <p className='text-base font-extralight tracking-[2px]'>Free Calls</p>
-                            <p className='text-base font-extralight tracking-[2px]'>1-800-000-000</p>
+                            <p className='text-base font-extralight tracking-[2px]'>24 Hours Available</p>
+                            <p className='text-base font-extralight tracking-[2px]'>09062979782</p>
                         </div>
                     </div>
                     <div className='flex flex-col gap-8 text-center'>
@@ -32,8 +32,8 @@ const ClientStories = () => {
                             <h2 className='text-[26px]'>Find Us</h2>
                         </div>
                         <div className='flex flex-col gap-4'>
-                            <p className='text-base font-extralight tracking-[2px] '>500 Terry Francine St.</p>
-                            <p className='text-base font-extralight tracking-[2px]'>San Francisco, CA 94158</p>
+                            <p className='text-base font-extralight tracking-[2px] '>Plot 22, Akiogun New Market Road,</p>
+                            <p className='text-base font-extralight tracking-[2px]'>Oniru Victoria Island, Lagos</p>
                         </div>
                     </div>
                     <div className='flex flex-col gap-8 text-center'>
