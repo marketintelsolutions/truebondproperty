@@ -21,7 +21,7 @@ const TeamMemberModal = ({ modal }) => {
                 <span onClick={modal.close} className="absolute cursor-pointer top-5 right-5"><IoClose size={25} /></span>
                 <div className="w-full max-w-[40%]"><img src="/images/man.webp" alt="person" className="h-full w-full object-cover" /></div>
                 <div className="w-full max-w-[50%] py-20">
-                    <h2 className="text-[30px]">Christina Lucero</h2>
+                    <h2 className="text-[30px]">- -</h2>
                     <p className="text-primaryBlue mt-4 font-light">Executive Property Manager</p>
 
                     <h3 className="font-bold underline mt-8 mb-6">About:</h3>

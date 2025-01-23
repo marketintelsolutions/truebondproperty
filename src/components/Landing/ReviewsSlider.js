@@ -3,19 +3,19 @@ import React, { useState, useEffect } from 'react';
 const ReviewsSlider = () => {
     const reviews = [
         {
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas similique quibusdam enim excepturi mollitia quaerat eum, ipsa vel quae alias a repellendus sapiente culpa beatae natus, quia voluptate. Nulla, amet.",
-            author: "Jay Flake",
-            location: "NG"
+            text: "We are absolutely thrilled with our new apartment! The entire buying process was seamless thanks to your expertise and dedication, and we couldn't be happier with the quality and location of our new home. You truly went above and beyond to ensure our needs were met, and we are so grateful for your outstanding service.",
+            author: "Ali Abdul",
+            location: "Abuja"
         },
         {
             text: "Exceptional service and outstanding results! The team went above and beyond my expectations. Their attention to detail and professional approach made all the difference.",
-            author: "Sarah Chen",
-            location: "US"
+            author: "Sarah Ola",
+            location: "Lagos"
         },
         {
             text: "Working with this team has been a game-changer for our business. Their innovative solutions and dedicated support have helped us achieve remarkable growth.",
-            author: "Mike Rodriguez",
-            location: "UK"
+            author: "Mike Damola",
+            location: "Lagos"
         }
     ];
 

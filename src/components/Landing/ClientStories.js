@@ -43,7 +43,7 @@ const ClientStories = () => {
                         </div>
                         <div className='flex flex-col gap-4'>
                             <p className='text-base font-extralight tracking-[2px] '>Direct Email</p>
-                            <p className='text-base font-extralight tracking-[2px]'>info@truebond.com</p>
+                            <p className='text-base font-extralight tracking-[2px]'>hello@truebondproperties.com</p>
                         </div>
                     </div>
                 </div>

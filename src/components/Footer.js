@@ -13,7 +13,7 @@ const Footer = () => {
                         <p className='text-[14px] font-light tracking-[2px]'>PROPERTIES</p>
                     </div>
                     <p className='text-sm font-extralight'>
-                        © 2024 Truebond
+                        © 2025. Truebond Properties. All rights reserved.
                     </p>
                 </div>
                 <div className='flex flex-wrap gap-10 md:gap-24 lg:gap-40 w-[40%]'>
@@ -29,7 +29,7 @@ const Footer = () => {
                             <br />
                             Oniru Victoria Island, Lagos
                             <br />
-                            info@truebond.com</p>
+                            hello@truebondproperties.com</p>
                         <div className='flex items-center gap-4 h-full pt-6 pb-2  border-b-4 border-transparent '>
                             <span><FaFacebookF size={16} /></span>
                             <span><FaTwitter size={16} /></span>
