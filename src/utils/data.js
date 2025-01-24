@@ -12,7 +12,7 @@ export const properties = [
     },
     {
         images: ['/images/maryland1.jpg', '/images/maryland2.jpg', '/images/maryland3.jpg', '/images/maryland4.jpg', '/images/maryland5.jpg', '/images/maryland6.jpg',],
-        address: 'No. 2 block 4A, Aderibigbe Shitte Street',
+        address: 'No. 2 Block 4A, Aderibigbe Shitte Street',
         location: 'Maryland, Lagos',
         price: '# ---',
         beds: 2,
@@ -23,7 +23,7 @@ export const properties = [
     },
     {
         images: ['/images/house.webp', '/images/chair.webp'],
-        address: 'Emerald court, house 7, Dideolu Estate',
+        address: 'Emerald court, House 7, Dideolu Estate',
         location: 'Victoria Island, Lagos',
         price: '# ---',
         beds: 3,
@@ -56,7 +56,7 @@ export const properties = [
     },
     {
         images: ['/images/house.webp', '/images/chair.webp'],
-        address: 'Shop A5, Shakir plaza',
+        address: 'Shop A5, Shakir Plaza',
         location: 'Abuja',
         price: '# ---',
         beds: '0',
