@@ -17,7 +17,7 @@ const ForSale = () => {
                     <PropertyCard key={index} property={property} />
                 ))}
             </div>
-            <Link to={'/buy'} className='bg-primaryRed border border-primaryRed hover:bg-white hover:text-primaryRed text-center px-4 py-4 rounded-md w-[190px] text-[20px] mt-24 text-white'>View More</Link>
+            <Link to={'/buy'} className='bg-primaryRed border border-primaryRed hover:bg-black hover:text-primaryRed text-center px-4 py-4 rounded-full w-[190px] text-[20px] mt-24 text-white'>View More</Link>
 
         </div>
     )

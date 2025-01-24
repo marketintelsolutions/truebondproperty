@@ -210,7 +210,7 @@ const Contact = () => {
     };
 
     return (
-        <div className='bg-[#1d2d42] text-white py-20'>
+        <div className='bg-[#0000007a] text-white py-20'>
             <div className='w-full mx-auto max-w-[1100px] flex flex-wrap gap-20 lg:px-0 px-10 justify-between'>
                 <div>
                     <h2 className='text-lg font-thin tracking-[4px]'>
@@ -316,7 +316,7 @@ const Contact = () => {
                         <button
                             type='submit'
                             disabled={isSubmitting}
-                            className='bg-primaryRed border border-primaryRed hover:bg-white hover:text-primaryRed px-4 py-3 w-[170px] text-[19px] rounded-md mt-4 text-white disabled:opacity-50'
+                            className='bg-primaryRed border border-primaryRed hover:bg-black hover:text-primaryRed px-4 py-3 w-[170px] text-[19px] rounded-full mt-4 text-white disabled:opacity-50'
                         >
                             {isSubmitting ? 'Submitting...' : 'Submit'}
                         </button>

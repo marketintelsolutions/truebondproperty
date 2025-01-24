@@ -10,19 +10,19 @@ const PropertyCard = ({ property }) => {
     // Sample property data - replace with actual data
     const propertyData = property || {
         images: [
-            '/images/house.webp',
-            '/images/house.webp',
-            '/images/house.webp',
-            '/images/house.webp'
+            '/images/coming.jpeg',
+            '/images/coming.jpeg',
+            '/images/coming.jpeg',
+            '/images/coming.jpeg'
         ],
         address: '17082 Perry Street',
         location: 'San Francisco, CA, USA',
-        price: '$850,000',
-        beds: 4,
-        baths: 2,
-        levels: 3,
-        sqft: 1234,
-        type: 'BUY'
+        price: '# ---',
+        beds: 0,
+        baths: 0,
+        levels: 0,
+        sqft: 0,
+        type: 'RENT'
     };
 
     return (

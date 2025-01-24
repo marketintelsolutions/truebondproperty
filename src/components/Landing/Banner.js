@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 
 const Banner = () => {
     return (
-        <section className='relative flex justify-center h-lvh items-center flex-col ' >
-            <div className='h-full w-full' >
-                <video autoPlay muted loop width="100%" >
+        <section className='relative flex justify-center md:h-lvh items-center flex-col ' >
+            <div className='h-[400px] md:h-full w-full' >
+                <video autoPlay muted loop width="100%" className='object-cover border-2 h-[400px] md:h-full' >
                     <source src="/banner.mp4" type="video/mp4" />
                 </video>
             </div>
@@ -14,7 +14,7 @@ const Banner = () => {
                     <h1 className='text-[40px] mb:text-[54px] md:text-[102px] text-center font-inter  font-extrabold'>New Properties</h1>
                     <p className=' text-[11px] mb:text-[18px] md:text-[28px] font-[200] tracking-[5px] uppercase'>Exclusively by Truebond</p>
                 </div>
-                <Link to={'/all-properties'} className='bg-primaryRed border border-primaryRed hover:bg-white hover:text-primaryRed text-center px-4 py-3 w-[180px] text-[20px] rounded-md'>Explore</Link>
+                <Link to={'/all-properties'} className='bg-primaryRed border border-primaryRed hover:bg-black hover:text-primaryRed text-center px-4 py-3 w-[180px] text-[20px] rounded-full'>Explore</Link>
             </div>
         </section>
     )

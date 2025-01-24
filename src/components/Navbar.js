@@ -18,7 +18,7 @@ const navigationLinks = [
         ]
     },
     { path: '/services', label: 'Services' },
-    { path: '/blog', label: 'Blog' },
+    { label: 'Blog', disabled: true },
     { path: '/contact', label: 'Contact' }
 ];
 
@@ -28,29 +28,24 @@ const Navbar = () => {
 
     const { pathname } = useLocation()
 
-    console.log('path', pathname);
     return (
-        <nav className='sticky top-0 left-0 z-[999] flex  gap-8 justify-between  items-center bg-primaryBlue text-white'>
+        <nav className='sticky top-0 left-0 z-[999] flex  gap-8 justify-between  items-center bg-white text-white'>
             <div className='flex items-center gap-8 md:w-auto w-full justify-between'>
                 <Link to={'/'} className='flex px-4 items-center gap-3 h-full pt-8 pb-3 border-b-4 border-primaryRed'>
-                    <span><MdHomeWork size={30} /></span>
+                    {/* <span><MdHomeWork size={30} /></span>
                     <h1 className='text-[22px]'>Truebond</h1>
-                    <p className='text-[18px] font-light tracking-[2px]'>PROPERTIES</p>
+                    <p className='text-[18px] font-light tracking-[2px]'>PROPERTIES</p> */}
+                    <img src="/logo.svg" alt="logo" className='max-w-[250px]' />
                 </Link>
-                <div className='mb:flex zr:hidden  items-center gap-4 h-full pt-8 pb-3  border-b-4 border-transparent '>
-                    <span><FaFacebookF size={16} /></span>
-                    <span><FaTwitter size={16} /></span>
-                    <span><FaInstagram size={16} /></span>
-                    <span><FaLinkedinIn size={16} /></span>
-                </div>
+
             </div>
-            <div className={`md:relative absolute top-[100%] left-0 md:flex-row flex-col md:w-auto w-full bg-primaryBlue md:pt-8 pb-5 pt-0  items-center gap-5 pr-10 ${isMenu ? 'flex' : 'md:flex zr:hidden'}`}>
+            <div onMouseLeave={() => setIsDropdown(false)} className={`md:relative absolute top-[100%] left-0 md:flex-row flex-col md:w-auto w-full bg-white md:pt-8 pb-5 pt-5  items-center gap-5 pr-10 ${isMenu ? 'flex' : 'md:flex zr:hidden'}`}>
                 {navigationLinks.map((item, index) => {
                     if (item.isDropdown) {
                         return (
                             <div
                                 key={index}
-                                className='relative  px-4 text-xl'
+                                className='relative  px-4 text-xl text-black'
                                 onClick={() => setIsDropdown(!isDropdown)}
                                 onMouseEnter={() => setIsDropdown(true)}
                             >
@@ -78,14 +73,15 @@ const Navbar = () => {
                         <Link
                             key={index}
                             to={item.path}
-                            className={`px-2 text-xl ${pathname === item.path ? 'text-primaryRed' : 'text-white'}`}
+
+                            className={`px-2 text-xl ${pathname === item.path ? 'text-primaryRed' : 'text-black'} ${item.disabled && 'cursor-not-allowed'} `}
                         >
                             {item.label}
                         </Link>
                     );
                 })}
             </div>
-            <span className={`pl-2 pr-6 pt-8 pb-2 cursor-pointer zr:inline-flex md:hidden`} onClick={() => setIsMenu(!isMenu)}><IoMenu size={30} /></span>
+            <span className={`pl-2 pr-6 pt-8 pb-2 cursor-pointer text-black zr:inline-flex md:hidden`} onClick={() => setIsMenu(!isMenu)}><IoMenu size={30} /></span>
         </nav>
     )
 }

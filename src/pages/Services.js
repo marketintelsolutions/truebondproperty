@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import ServiceItem from '../components/Services/ServiceItem'
 import { services } from '../utils/data'
 
 const Services = () => {
+    useEffect(() => {
+        window.scroll(0, 0)
+    }, [])
     return (
         <section className=''>
             <div className='' style={{ backgroundImage: `url(/images/services.jpg)`, backgroundSize: 'cover', backgroundPosition: '10% 50%' }}>
