@@ -11,7 +11,7 @@ const Buy = () => {
         <section className='pb-20'>
             <div className='' style={{ backgroundImage: `url(/images/house.jpg)`, backgroundSize: 'cover', backgroundPosition: '10% 50%' }}>
                 <div className='h-full w-full flex flex-col justify-center items-center gap-5 py-20 bg-[#00000051] text-white'>
-                    <p className='text-2xl tracking-[5px] font-thin'>OUR EXCLUSIVE PROPERTIES</p>
+                    <p className='text-2xl tracking-[5px] font-thin text-center'>OUR EXCLUSIVE PROPERTIES</p>
                     <h1 className='text-[60px] font-bold'>Buy</h1>
                 </div>
             </div>

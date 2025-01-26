@@ -15,7 +15,7 @@ const Services = () => {
                 </div>
             </div>
 
-            <div className='w-full max-w-max mx-auto py-40 flex flex-col gap-40'>
+            <div className='w-full max-w-max mx-auto py-20 md:py-40 flex flex-col gap-24 md:gap-32 lg:gap-40'>
                 {
                     services.map((item, index) => <ServiceItem key={index} index={index} {...item} />)
                 }

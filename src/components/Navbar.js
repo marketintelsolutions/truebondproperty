@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
+import { FaAngleDown, FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
 import { IoMenu } from 'react-icons/io5';
 import { MdHomeWork } from 'react-icons/md'
 import { Link, useLocation } from 'react-router-dom'
@@ -35,7 +35,7 @@ const Navbar = () => {
                     {/* <span><MdHomeWork size={30} /></span>
                     <h1 className='text-[22px]'>Truebond</h1>
                     <p className='text-[18px] font-light tracking-[2px]'>PROPERTIES</p> */}
-                    <img src="/logo.svg" alt="logo" className='max-w-[250px]' />
+                    <img src="/logo.svg" alt="logo" className='max-w-[150px] md:max-w-[200px] lg:max-w-[250px]' />
                 </Link>
 
             </div>
@@ -46,10 +46,17 @@ const Navbar = () => {
                             <div
                                 key={index}
                                 className='relative  px-4 text-xl text-black'
-                                onClick={() => setIsDropdown(!isDropdown)}
-                                onMouseEnter={() => setIsDropdown(true)}
+
+
                             >
-                                {item.label}
+                                <p
+                                    className='flex gap-1 items-center cursor-pointer'
+                                    onClick={() => setIsDropdown(!isDropdown)}
+                                    onMouseEnter={() => setIsDropdown(true)}
+                                >
+                                    {item.label}
+                                    <span><FaAngleDown /></span>
+                                </p>
                                 {isDropdown && (
                                     <div
                                         onMouseLeave={() => setIsDropdown(false)}
@@ -60,6 +67,7 @@ const Navbar = () => {
                                                 key={dropIndex}
                                                 to={dropdownItem.path}
                                                 className={`hover:text-primaryRed ${pathname === dropdownItem.path ? 'text-primaryRed' : 'text-white'} text-xl`}
+                                                onClick={() => setIsMenu(false)}
                                             >
                                                 {dropdownItem.label}
                                             </Link>
@@ -73,7 +81,7 @@ const Navbar = () => {
                         <Link
                             key={index}
                             to={item.path}
-
+                            onClick={() => setIsMenu(false)}
                             className={`px-2 text-xl ${pathname === item.path ? 'text-primaryRed' : 'text-black'} ${item.disabled && 'cursor-not-allowed'} `}
                         >
                             {item.label}
