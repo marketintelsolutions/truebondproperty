@@ -18,7 +18,7 @@ const Contact = () => {
             <div className='flex flex-wrap lg:px-0 px-6 gap-8 md:gap-4 justify-between w-full max-w-[1100px] mx-auto py-20 lg:py-40 text-[#2b2b2b]'>
                 <h1 className='text-[26px] font-bold'>Our Office</h1>
                 <div className='flex gap-4 items-center'>
-                    <span className='text-primaryBlue'><FaLocationDot size={35} /></span>
+                    <span className='text-primaryRed'><FaLocationDot size={35} /></span>
                     <p className='text-base font-roboto'>
 
                         Plot 22, Akiogun New Market Road, <br />
@@ -26,7 +26,7 @@ const Contact = () => {
                 </div>
                 <div className='flex gap-4 items-center'>
 
-                    <span className='text-primaryBlue'><FaPhone size={35} /></span>
+                    <span className='text-primaryRed'><FaPhone size={35} /></span>
                     <p className='text-base font-roboto'>
                         Tel: 09062979782
                         <br />
@@ -35,7 +35,7 @@ const Contact = () => {
                 </div>
                 <div className='flex  gap-4 items-center'>
 
-                    <span className='text-primaryBlue'><IoMail size={35} /></span>
+                    <span className='text-primaryRed'><IoMail size={35} /></span>
                     <p className='text-base font-roboto'> hello@truebondproperties.com</p>
                 </div>
             </div>
